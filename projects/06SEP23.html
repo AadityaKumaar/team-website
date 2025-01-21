@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Oddsrt Private Limited">
+    <meta name="description" content="Official website of Team Knights">
+    <meta name="og:title" content="Knights Project">
+    <meta name="og:image" content="https://knights.org.in/img/kog.png"/>
+    <meta name="og:description" content="Team Unity - Our Quick Adventure">
+    <meta property="og:url" content="https://knights.org.in/">
+    <meta name="theme-color" content="" id="themeColor">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="../img/fi.png" type="image/png" id="iconLight">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="../main.css">
+
+      <title>Knights Project: Team Unity - Our Quick Adventure</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+          <a href="/" class="nav__logo prevent-select">
+            <span class="nav__logo-circle"><img src="../img/knights-black.svg" alt="" class="nav-logo prevent-select"></span>
+            <span class="nav__logo-name prevent-select">Knights.</span>
+          </a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/#projects" class="nav__link nav__link-button">Back</a>
+              </li>
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-circle-line"></i>
+            </div>
+          </div>
+
+          <div class="nav__buttons">
+
+            <!-- Theme Button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <!-- Toggle Button -->
+            <a href="/#projects" class="nav__back">
+              <i class="ri-arrow-left-s-line"></i>
+            </a>
+          </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main"> 
+          <!--==================== PROJECTS ====================-->
+          <section class="project section" id="projects">
+            <h2 class="section__title-2">
+              <span class="prevent-select">Project.</span>
+            </h2>
+
+            <div class="project__container container grid">
+              <article class="project__card">
+                <div class="project__image prevent-select">
+                  <img src="../img/uImg1.jpg" alt="image" class="projects__img prevent-select">
+                </div>
+
+                <div class="projects__content prevent-select">
+                  <h3 class="projects__subtitle prevent-select">6th Sept 1823</h3>
+                  <h2 class="projects__title prevent-select">Lorem Ipsum - Cursus Luctus Velit</h2>
+
+                  <p class="project__description prevent-select">
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Ac cras vitae duis ligula parturient. Iaculis varius class varius mollis urna. Dis posuere nulla at class; ridiculus pharetra vestibulum. Quisque convallis nisi adipiscing ante maximus hac fames.
+                    <br><br>
+                    <ol class="ol prevent-select">
+                      <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</li><br>
+                      <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</li><br>
+                      <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</li><br>
+                      <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</li><br>
+                      <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</li><br>
+                      <li>Showtime: Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</li><br>
+                    </ol>
+                    <br><br>
+                    <b>Learning :</b><br>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Habitant habitant commodo hac varius tristique placerat condimentum. In quis libero tortor leo magnis nam aptent. Nulla neque ante laoreet lacinia mauris pellentesque, tortor viverra. Fringilla aliquam dolor lorem inceptos dictum commodo netus. Elit habitant eleifend dis class diam venenatis eros pharetra. Integer nullam ex fames class ante platea.
+                    <br><br>
+                    <i>Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus risus posuere dolor dapibus vulputate aptent cubilia nostra.</i>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+      <!--==================== FOOTER ====================-->
+      <footer class="footer1">
+        <div class="footer__container container grid">
+          <ul class="footer__links">
+            <li>
+              <a href="/#products" class="footer__link">Products</a>
+            </li>
+            
+            <li>
+              <a href="/#projects" class="footer__link">Projects</a>
+            </li>
+            <li>
+              <a href="/#about" class="footer__link">About Us</a>
+            </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; <span id="currentYear"></span> Knights. All Rights Reserved.
+        </span>
+        </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#projects" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="../scrollreveal.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="../script.js"></script>
+
+      <script>
+        const iconLight = document.getElementById("iconLight");
+        const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+  
+        const changeFavicon = () => {
+          if (isDark.matches) iconLight.href= `${window.location.hostname}/img/fi-dark.png`;
+          else iconLight.href= `${window.location.hostname}/img/fi.png`;
+        };
+        changeFavicon();
+        setInterval(changeFavicon, 100);
+      </script>
+      <script>
+        const changeThemeColor = () =>{
+       if(document.body.classList.contains("dark-theme")){
+       document.getElementById("themeColor").setAttribute("content","#141414")
+       }else{
+       document.getElementById("themeColor").setAttribute("content","#dedede")
+       }}
+       changeThemeColor()
+    setInterval(changeThemeColor, 100)
+    </script>
+    <script>
+      const footerYear = document.getElementById("currentYear");
+      const currentYear = new Date().getFullYear();
+      footerYear.innerText = currentYear;
+
+    </script>
+</body>
+</html>

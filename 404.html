@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Aditya Kumar">
+    <meta name="description" content="Page Not Found!">
+    <meta name="og:title" content="OHS Error: Invalid URL!">
+    <meta name="og:image" content="https://teamwebsite.web.app/img/kog.png"/>
+    <meta name="og:description" content="The requested URL was not found on this server.">
+    <meta property="og:url" content="https://teamwebsite.web.app/">
+    <meta name="theme-color" content="" id="themeColor">
+    <title>OHS Error 404: Page Not Found!</title>
+    <link rel="shortcut icon" type="image/png" href="https://teamwebsite.web.app//img/fi.png" id="iconLight">
+    <link rel="stylesheet" href="https://teamwebsite.web.app//main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+  </head>
+  <body class="e404__body">
+    <header class="header" id="header">
+         <nav class="nav container">
+          <a href="/" class="nav__logo prevent-select">
+            <span class="nav__logo-circle"><img src="https://teamwebsite.web.app/img/knights-black.svg" alt="" class="nav-logo prevent-select"></span>
+            <span class="nav__logo-name prevent-select">Knights.</span>
+          </a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/" class="nav__link nav__link-button">Home</a>
+              </li>
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-circle-line"></i>
+            </div>
+          </div>
+
+          <div class="nav__buttons">
+
+            <!-- Theme Button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <!-- Toggle Button -->
+            <a href="/" class="nav__back">
+              <i class="ri-home-2-line"></i>
+            </a>
+          </div>
+         </nav>
+      </header>
+
+    <div class="e404__message">
+      <a class="e404__a"><span class="e404__span prevent-select">
+        <img src="https://teamwebsite.web.app/img/knights-black.svg" alt="" class="e404__logo prevent-select">
+       </span></a>
+      <h2 class="e404__h2 prevent-select">404</h2>
+      <h1 class="e404__h1 prevent-select">Page Not Found :(</h1>
+      <p class="e404__p prevent-select">The requested <code>URL</code> was not found on this server. Please check the <code>URL</code> for mistakes and try again.</p>
+    </div>
+
+    <!--================================================================================================================== -->
+    <script>
+      const iconLight = document.getElementById("iconLight");
+      const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+      const changeFavicon = () => {
+        if (isDark.matches) iconLight.href= 'https://teamwebsite.web.app/img/fi-dark.png';
+        else iconLight.href= 'https://teamwebsite.web.app/img/fi.png';
+      };
+      changeFavicon();
+      setInterval(changeFavicon, 100);
+    </script>
+    
+    <script src="https://teamwebsite.web.app/./script.js"></script>
+    <script>
+      const changeThemeColor = () =>{
+     if(document.body.classList.contains("dark-theme")){
+     document.getElementById("themeColor").setAttribute("content","#141414")
+     }else{
+     document.getElementById("themeColor").setAttribute("content","#dedede")
+     }}
+     changeThemeColor()
+  setInterval(changeThemeColor, 100)
+  </script>
+  </body>
+</html>
